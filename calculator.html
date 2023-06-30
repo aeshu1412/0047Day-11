@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div style="border: 2px solid blue;  width: 400px; position: relativ;;">
+    <center>
+        <h1>
+            CALCULATOR
+        </h1>
+        <input type="number" name="fvalue" placeholder="ENTER FIRST VALUE" id="a"> 
+        <input type="number" name="fvalue" placeholder="ENTER SECOND VALUE" id="b">
+        <br><br>
+            <button onclick="sum()">ADDITION</button>
+            <button onclick="sub()">SUBSTRACTION</button>
+            <button onclick="mul()">MULTIPLICATION</button>
+            <button onclick="div()">DIVITION</button>
+        <br><br>
+       
+           
+            <h4>RESULT:-<p id="reslut"></p></h4>
+
+
+        <!-- <p id="demo1"></p>
+        <p id="demo1"></p>
+        <p id="demo1"></p>
+        <p id="demo1"></p>
+         -->
+        </center>
+    </div>     
+    <script>
+        
+
+  
+    function sum(){
+    let a=eval(document.getElementById("a").value);
+    let b=eval(document.getElementById("b").value);
+    let total=a+b;
+    document.getElementById("reslut").innerHTML=total;
+    }  
+    function sub(){
+            let a=eval(document.getElementById("a").value);
+            let b=eval(document.getElementById("b").value);
+            let total=a-b;
+            document.getElementById("reslut").innerHTML=total;
+    } 
+     function mul(){
+        let a=eval(document.getElementById("a").value);
+    let b=eval(document.getElementById("b").value);
+    let total=a*b;
+    document.getElementById("reslut").innerHTML=total;
+    }
+      function div(){
+        let a=eval(document.getElementById("a").value);
+        let b=eval(document.getElementById("b").value);
+        let total=a/b;
+        document.getElementById("reslut").innerHTML=total;
+    }
+    
+        </script>
+</body>
+</html>
